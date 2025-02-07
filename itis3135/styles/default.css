@@ -54,8 +54,8 @@ p {
 
 /* img */
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 20%;
+    height: 20%;
     border: 2px solid #191265; /* dark blue */
     margin: 20px 0;
 }
@@ -66,12 +66,7 @@ h1, h2 {
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 20px;
 }
-h1 {
-    font-size: 2rem;
-}
-h2 {
-    font-size: 1.5rem;
-}
+
 
 /* footer */
 footer {
