@@ -1,0 +1,50 @@
+ /* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+
+body {
+font-family: 'Radley', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #edf2fb; 
+color: #112d4e; /* dark blue */
+}
+
+header {
+background-color: #3f72af; /* medium blue */
+color: #f9f7f7; /* off white */
+text-align: center;
+padding: 20px;
+}
+h2 {
+margin: 0;
+text-align: center;
+color: #112d4e; /* dark blue */
+}
+
+nav ul li {
+display: inline;
+margin: 0 10px;
+list-style: none;
+padding: 0;
+}
+
+nav ul li a {
+color: #f9f7f7; /* off white */
+text-decoration: none;
+}
+
+nav ul li a:hover {
+text-decoration: underline;
+color: #dbe2ef; /* lightest blue */
+}
+
+main {
+padding: 50px;
+text-align: left;
+}
+
+section p {
+line-height: 2;
+color: #3f72af; /* medium blue */
+}
+
