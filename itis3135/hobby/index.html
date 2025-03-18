@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title> 
+    <!--Styling is on this page starts-->
+    <style>
+    /* CSS Hexcode of colors i will use
+    darkblue: #1b2845;
+    darkpink: #ee81a6;
+    lightpink: #ffd6f4;
+    lightblue: #c2e1ff;
+    purple: #59218f;
+    lightpurple: #B3B3D1; */
+    body {
+        font-family: 'Georgia', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1b2845;
+        color: #ffd6f4; 
+    }
+        
+    .allinfobox {
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
+        margin: 0; 
+        padding: 0px; 
+        top: 0; 
+        right: 0; 
+        background-color: #ee81a6;
+    }
+
+    .outsidebox {
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: center; 
+        padding: 0; 
+        gap: 90px; 
+        padding: 45px;
+        background-color: #ffd6f4;
+        color: white;
+        overflow: hidden; 
+    }
+
+    h1 {
+        color: white; 
+        font-size: 2.0rem; 
+        margin: 30px; 
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 20px;  
+        font-weight: bold;
+        color: #59218f;
+        
+    }
+
+    a:hover {
+        color: #1b2845;
+        background-color: #c2e1ff; 
+        border-radius: 5px;
+
+    }
+
+    h2 {
+    text-align:center;
+    margin-top:25px;
+    }
+
+    p {
+        text-align: center;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .images {
+        text-align: center;
+    }
+
+    .imgcenter {
+        display: block; 
+        margin: auto; 
+        width: 500px;
+        height: auto; 
+    }
+
+    figcaption {
+        margin-top: 10px;
+    }
+
+    table {
+        margin: auto; 
+        width: 80%;
+    }
+
+    th, td {
+        border: 1px solid white;
+        text-align: left; 
+        padding:10px
+    }
+
+    h3, h4 {
+        text-align:center;
+    }
+
+    ul, ol {
+    padding: 0; 
+    margin: auto; 
+    list-style-type: none;
+    }
+
+    li {
+    text-align: center; 
+    }
+
+    footer {
+    background-color: #B3B3D1;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    }
+
+    /* hide all sections */
+    section {
+      display: none;
+      padding: 20px;
+    }
+
+    /* show active section */
+    section.active {
+      display: block;
+    }
+</style> <!--style ends-->
+    
+</head>
+<!--There is body, head main and footer in html-->
+<body>
+    <header class="allinfobox">
+        <!--Header has h1-->
+        <h1>Photography</h1> 
+        <nav class="outsidebox">
+            <a href="#home">Home</a>
+            <a href="#about">About</a> <!-- WHO -->
+            <a href="#best-times" >Best Times</a> <!-- WHEN -->
+            <a href="#bestlocations">Best Locations</a> <!-- WHERE -->
+            <a href="#how">How</a>
+            <a href="#why">Why</a>
+            <a href="#aiprompts">AI Prompts</a>
+        </nav>
+    </header>
+    <main>
+        <!--HOME 1-->
+            <!-- HOME
+             Prompts: Use AI Microsoft Copilot
+             paragraph1: "Create information for my home page about photography" 
+             paragraph2: "Create information for my home page about photography"
+             img1-home: "Chicago City Views ""
+            
+             Personal Writing:
+             figcaption: by me.
+            -->
+        <section id="home" class="active">
+            
+            <h2>Home</h2>
+                <p>Photography isn't just a hobby—it's a way to capture the beauty, 
+                emotion, and stories of the world around us. Here, you'll find a collection 
+                of moments frozen in time, from vibrant cityscapes to serene natural landscapes,
+                candid portraits, and everything in between.Whether you're an experienced photographer
+                or simply appreciate the art, this space is for sharing and celebrating creativity through 
+                the camera's lens. You'll discover tips, stories behind the shots, and a gallery that 
+                sparks inspiration.</p>
+                <p>Whether you're an experienced photographer or simply appreciate the art, this space is for
+                sharing and celebrating creativity through the camera's lens. You'll discover tips, stories behind 
+                the shots, and a gallery that sparks inspiration. Among all the subjects to photograph, city views holds special place.
+                The towering skyscrapers, busy streets, and glowing views create a unique aesthetic worth capturing.</p>
+            <div class="galleryofimgs">
+                <figure class="images">
+                    <img src="images/img1-home.png" class="imgcenter" alt="city-view">
+                    <figcaption>Chicago City Views</figcaption>
+                    <p><em>This image was generated with the prompt:"Chicago City Views"</em></p>
+                </figure>
+            </div>
+            </section>
+
+        <!--ABOUT 2 - WHO-->
+        <!-- ABOUT
+             Prompts: Use AI Microsoft Copilot
+             paragraph1: "Create information about photography but emphasize how it can used to see the world"
+             paragraph2: "Create information about photography but emphasize how it can be more than a skill."
+             img2-about: "someone taking a photo with the camera of an aesthetic landscape, representing art of photography."
+
+             Personal Writing:
+             figcaption: by me.
+            -->
+        <section id="about">
+            <h2>About Photography</h2>
+                <p>Photography is a way to truly observe and engage with the world around us.
+                    It helps us notice the details that might otherwise go unseen—the soft
+                    colors of a sunrise, the symmetry in everyday architecture, or the emotion 
+                    in a passing glance. Through the lens, we find meaning in the ordinary and 
+                    uncover layers of beauty and complexity in our surroundings.</p>
+                <p>Photography is more than a skill—it’s a way of thinking, feeling, and interpreting the world.
+                    It’s not just about knowing how to use a camera; it’s about cultivating an eye for stories,
+                    emotions, and connections that might otherwise go unnoticed. At its core, photography is a
+                    form of expression that allows us to convey perspectives, evoke emotions, and preserve moments
+                    that resonate.</p>
+                <figure class="images">
+                    <img src="images/img2-about.png" class="imgcenter" alt="Someone with a camera capturing a aresthetic landscape.">
+                    <figcaption>Photography can be used to capturing the beauty of the world.</figcaption>
+                </figure>
+                <p><em>This image was generated with the prompt: "someone taking a photo
+                    with the camera of an aesthetic landscape, representing art of photography."</em></p>
+        </section>
+
+        <!-- BEST TIMES 3 - WHEN -->
+        <!-- BESTTIMES
+            Prompts: Use AI Microsoft Copilot
+            paragraph1: "Create information about the best time to take photos."
+            paragraph2: "Create information about the best time to take photos."
+            img3-besttimes: "An aesthetic golden hour in a park/nature place where there are nice views."
+            img4-besttimes: ""blue hour in a city park"."
+
+            Personal Writing:
+            figcaption: by me.
+            table: by me: -->
+        <section id="best-times">
+            <h2>Best Times</h2>
+            
+                <p>Golden Hour: The golden hour, shortly after sunrise and before sunset, 
+                is widely considered the best time for photography. During this time, the sun is 
+                low on the horizon, casting soft, warm, and diffused light that creates a natural glow. 
+                It’s perfect for portraits, landscapes, and outdoor shots, as it minimizes harsh shadows and 
+                produces a dreamy effect.</p>
+
+                <p>Blue Hour: Blue hour occurs just before sunrise or right after sunset, when the sun is below the horizon, 
+                casting a soft, bluish glow. It creates a serene and moody atmosphere, perfect for capturing cityscapes, 
+                landscapes, and long-exposure shots. The cool, diffused light contrasts beautifully with the warm glow of 
+                artificial lights in urban settings. This fleeting time offers unique opportunities to create 
+                striking and tranquil photographs.</p>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Time of Day</th>
+                    <th>Lighting Characteristics</th>
+                    <th>Best For</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Blue Hour</td>
+                    <td>Cool blue tones that can show a light aura</td>
+                    <td>Best used for city views as it can align with architecture and or dark and moody landscapes with weather such as rain and snow</td>
+                  </tr>
+                  <tr>
+                    <td>Golden Hour</td>
+                    <td>Warm, soft, light aura used to have glowing views</td>
+                    <td>Best used for images like portraits and the outdoor but green lush landscapes.</td>
+                  </tr>
+                </tbody>
+              </table>
+            <figure class="images">
+                <img src="images/img3-besttimes.png" class="imgcenter"  alt="Golden hour in park.">
+                <figcaption>Golden hour in an park, with a city background.</figcaption>
+            </figure>
+            <p><em>This image was generated with the prompt: "An aesthetic golden hour in a park/nature place where there are nice views."</em></p>
+
+            <figure class="images">
+                <img src="images/img4-besttimes.png" class="imgcenter" alt="blue hour in park.">
+                <figcaption>Blue hour in an park, with a city background.</figcaption>
+            </figure>
+            <p><em>This image was generated with the prompt: "blue hour in a city park"</em></p>
+
+        </section>
+
+    <!-- BEST LOCATIONS 4 - WHERE -->
+    <!-- BESTLOCATION
+        Prompts: Use AI Microsoft Copilot
+        paragraph1: "Create information that tells me the best locations to take photos."
+        paragraph2: "Create information that tells me the best locations to take photos."
+        img5-bestlocations: "Mountain with aesthetic lake in background nice surroundings"
+
+        Personal Writing:
+        figcaption: by me. -->
+    <section id="bestlocations">
+        <h2>Best Locations</h2>
+        <p>Finding the best locations for photography depends on the kind of stories you want to tell and the
+            mood you aim to create. Natural landscapes like mountains, beaches, and forests offer breathtaking 
+            backdrops with dynamic light and colors. Urban environments, on the other hand, provide a canvas of architectural
+             lines, bustling streets, and vibrant cityscapes. For something more unique, historical sites and cultural landmarks can 
+             infuse your photos with a sense of time and storytelling</p>
+        <p>Seasonal changes also add variety to your photography. From snow-covered landscapes in winter to the warm hues of fall, 
+            each season offers its own charm. Wildlife reserves and botanical gardens allow you to focus 
+            on intricate details of nature, while hidden alleys or small, uncharted villages can lend a touch
+            of mystery to your shots. Exploring diverse locations not only challenges your creativity but also 
+            transforms the way you see the world.</p>
+
+        <figure class="images">
+            <img src="images/img5-bestlocations.png" class="imgcenter" alt="A mountain near lake.">
+            <figcaption>A mountain near lake.</figcaption>
+        </figure>
+        <p><em>This image was generated with the prompt: "Mountain with aesthetic lake in background nice surroundings"</em></p>
+    </section>
+        
+    <!-- HOW 5-->
+     <!-- HOW
+        Prompts: Use AI Microsoft Copilot
+        paragraph1: "Create short information on the process of photography"
+        orderedlist/list: "Step by Step in five steps"
+        img6-how: "Mountain with aesthetic lake in background nice surroundings"
+
+        Personal Writing:
+        figcaption: by me. -->
+    <section id="how">
+        <h2>How</h2>
+            <p>Photography involves a blend of preparation, creativity, and technique. 
+            It starts with planning—choosing your subject, location, and equipment.
+            During the shoot, lighting, composition, and camera settings like aperture, 
+            shutter speed, and ISO are adjusted to capture the desired image. Afterward, 
+            post-processing helps refine the photo through editing software to enhance colors,
+            contrast, or composition. Finally, the photos can be shared or reflected upon, 
+            enriching your journey as a photographer.
+            </p>
+            <ol>
+                <li><strong>Plan Your Shot:</strong> Choose your subject, location, and prepare your gear.</li>
+                <li><strong>Set Up and Compose:</strong> Frame your shot using composition techniques.</li>
+                <li><strong>Adjust Camera Settings:</strong> Set aperture, shutter speed, and ISO to match the scene.</li>
+                <li><strong>Capture the Image:</strong> Take the shot and try different angles or settings.</li>
+                <li><strong>Edit and Share:</strong> Enhance the photo with editing software and share it.</li>
+            </ol>
+            <figure class="images">
+                <img src="images/img6-how.png" class="imgcenter" alt="Person adjusting camera to get image of nature.">
+                <figcaption>A photographer adjusting their camera to take an image.</figcaption>
+            </figure>
+            <p><em>This image was generated with the prompt: "Someone using a camera with tripod to get the perfect image of a nature outdoor view"</em></p>
+    </section>
+
+    <!-- WHY 6-->
+      <!-- WHY
+        Prompts: Use AI Microsoft Copilot
+        paragraph1: "Create information of why photography"
+        paragraph2: "Create information of why photography"
+        img7-why: "single leaf on a beach with water in the backgruound"
+
+        Personal Writing:
+        figcaption: by me. -->
+    <section id="why">
+        <h2>Why</h2>
+        <p>Photography goes beyond simply capturing images—it’s a powerful form of storytelling and self-expression. 
+            It allows us to preserve fleeting moments, emotions, and memories that might otherwise fade with time.
+            Through photography, we can share unique perspectives, highlight beauty in the ordinary, and inspire 
+            others to see the world differently.</p>
+        <p>It’s a journey of endless exploration. Whether you’re capturing moments to tell a story, document the beauty of 
+            everyday life, or experiment with light and composition, photography invites you to see the world differently.
+            It pushes boundaries and fosters creativity, encouraging growth not just as a photographer, 
+            but as an observer of the world.</p>
+
+        <figure class="images">
+            <img src="images/img7-why.png" class="imgcenter"  alt="simple moment on the beach">
+            <figcaption>This captures a simple moment.</figcaption>
+            <p><em>This image was generated with the prompt: "single leaf on a beach with water in the backgruound"</em></p>
+        </figure>
+    </section>
+
+     <!-- AI PROMPTS 7 -->
+     <section id="aiprompts">
+        <h2>AI PROMPTS</h2>
+        <h4>AI Model used for this was Microsoft Co-pilot</h4>
+        <!-- 1 -->
+        <h3>Home</h3>
+        
+        <p>For the Home Section, these are the prompts I used for paragraph one and paragraph two: </p>
+        <ul>
+            <li>"Create information for my home page about photography."</li>
+            <li>"Create information for my home page about photography."</li>
+        </ul>
+      
+         <!-- 2 -->
+        <h3>About</h3>
+        
+        <p>For the About Photography section, these are the prompts I used for paragraphs one and two:</p>
+        <ul>
+            <li>"Create information about photography but emphasize how it can be used to see the world."</li>
+            <li>"Create information about photography but emphasize how it can be more than a skill."</li>
+        </ul>
+         <!-- 3 -->
+        <h3>Best Times</h3>
+        <p>For the Best Times Section, I used the prompts below for paragraph one and two:</p>
+        <ul>
+            <li>"Create information about the best time to take photos."</li>
+            <li>"Create information about the best time to take photos."</li>
+        </ul> 
+         <!-- 4 -->
+        <h3>Best Locations</h3>
+        <p>For the Best Location Section, I used the prompts below for paragraph one and two:</p>
+        <ul>
+            <li>"Create information that tells me the best locations to take photos."</li>
+            <li>"Create information that tells me the best locations to take photos."</li>
+        </ul> 
+         <!-- 5 -->
+        <h3>How</h3>
+        <p> For the How Section, I used the prompts below for paragraph one and underordered list:</p>
+        <ol>
+            <li>"Create short information on the process of photography"</li>
+            <li>"Step by Step in five steps"</li>
+        </ol>
+       
+        <!-- 6 -->
+        <h3>Why</h3>
+        <p> For the Why Section, I used the prompts below for paragraph one and two:</p>
+        <ol>
+            <li>"Create information of why photography"</li>
+            <li>"Create information of why photography"</li>
+        </ol>
+    </div>
+    </section>
+
+    <!--Script for JS to make code that can Hide Sections-->
+    <script>
+    
+    const navLinks = document.querySelectorAll('nav a');
+ 
+    navLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+    event.preventDefault(); 
+
+    const targetId = this.getAttribute('href').substring(1);
+
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.remove('active');
+    });
+
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.classList.add('active');
+    }
+    });
+    });
+    </script>
+    <!--script ends-->
+
+    </main>
+    <footer>
+    <p>Designed By <a href="./dishanarianidesigns.com/index.html">Disha Nariani Designs</a></p>
+    <p>Disha Nariani Firm &copy;2025</p>
+      
+      <!--HTML AND CSS VALIDATION LINKS-->
+       <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+       <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+       </a>
+       <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+       <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+       </a>
+    </footer>
+</body>
+</html>
