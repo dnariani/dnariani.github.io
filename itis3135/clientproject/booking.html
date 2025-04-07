@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <title>Specter Accounting & Co.</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img class="logoimg" src="./images/logo.png" alt="Specter Accounting & Co. Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li class="dropdown">
+                <a href="contact.html" class="dropbutton">Contact Us</a>
+                <ul class="dropdown-content">
+                    <li><a href="messageform.html">Message Form</a></li>
+                    <li><a href="booking.html">Booking Consultation</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="form-container">
+        <h2>Book a Consultation</h2>
+            <div class="formbox">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="formbox">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="formbox">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="formbox">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="formbox">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="formbox">
+                <label for="type">Type of Consultation:</label>
+                <select id="type" name="type" required>
+                    <option value="">Select...</option>
+                    <option value="financial">Financial</option>
+                    <option value="manage">Managerial</option>
+                    <option value="tax">Tax</option>
+                </select>
+            </div>
+            <button type="submit" class="submit">Book Appointment</button>
+        </form>
+    </div>
+</body>
+</html>
