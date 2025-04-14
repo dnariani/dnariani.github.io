@@ -118,3 +118,10 @@ header nav a:hover {
     border:1px solid #191265; /* dark blue */
     background-color: #ffffff; /* white */
 }
+
+/*to fix errors*/
+.validation {
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
