@@ -9,6 +9,46 @@ HEX CODES I PLAN TO USE for right now: (might change later on)
 #000000 - black
 */
 
+
+/* Activity #4 changes */
+main {
+    max-width: 1200px; /*  Max-Width for the Page */
+    width: 90%; /* Percentage width for layout to be flexible and responsive to the screen size */
+    margin: 0 auto; /* Centers the content horizontally - margins to 0, auto on same*/ 
+}
+
+/* Desktop - Default styles */
+#colorbox {
+    height: 200px;
+    width: 200px;
+    background: blue;
+    margin: 50px auto;
+}
+/*Putting in appropriate media queries for 2-3 different sizes.*/
+
+/* Media Query - Rule Overrides For Laptops / Small Screens */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    #colorbox {
+        background-color: yellow; 
+    }
+}
+
+/* Media Query - Rule Overrides For Tablets */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    #colorbox {
+        background-color: orange; 
+    }
+}
+
+/* Media Query - Rule Overrides For Mobile Devices */
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    #colorbox {
+        background-color: red; 
+    }
+}
+/* Activity #4 end changes */
+
+
 html, body {
     background-color: #E6D4e6; /* light pink */
     text-align: center;
