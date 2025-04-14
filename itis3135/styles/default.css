@@ -10,6 +10,29 @@ HEX CODES I PLAN TO USE for right now: (might change later on)
 */
 
 
+/*Max-Width for the Page*/
+main {
+    max-width: 1200px; 
+}
+
+/* Adjust percentage based on design requirements */
+
+main {
+    width: 90%; 
+}
+
+main {
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+
+
+
+
+
+
+
+
 
 /*for the whole page*/
 body {
@@ -52,12 +75,12 @@ p {
     font-size: 1.2em;
 }
 
-/* img */
+/* img 
 img {
     max-width: 20%;
     height: 20%;
     margin: 20px 0;
-}
+} */
 
 /* heading */
 h1, h2 {

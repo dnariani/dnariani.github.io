@@ -48,3 +48,20 @@ line-height: 2;
 color: #3f72af; /* medium blue */
 }
 
+footer {
+    background-color: #f9f7f7;  /* off white */
+    text-align: center;
+    padding: 50px;
+    border: 2px solid #3f72af; /* medium blue */
+}
+
+footer a {
+    text-decoration: none;
+    color: #3f72af; /* medium blue */
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+
+
