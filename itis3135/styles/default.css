@@ -2,46 +2,23 @@
 /*
 HEX CODES I PLAN TO USE for right now: (might change later on)
 #191265 - dark blue
-#387780; teal green
+#387780 teal green
 #ede9e2 - beige
 #E6D4e6 - pink
 #ffffff - white
 #000000 - black
 */
 
-
-/*Max-Width for the Page*/
-main {
-    max-width: 1200px; 
-}
-
-/* Adjust percentage based on design requirements */
-
-main {
-    width: 90%; 
-}
-
-main {
-    margin: 0 auto; /* Centers the content horizontally */
-}
-
-
-
-
-
-
-
-
-
-
-/*for the whole page*/
-body {
+html, body {
     background-color: #E6D4e6; /* light pink */
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: #191265; /* dark blue */
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
 }
 
 /* nav */
@@ -51,13 +28,14 @@ nav {
     text-align: center;
 }
 
+/* links */
 nav a {
     text-decoration: none;
     color: #191265; /* dark blue */
     font-weight: bold;
 }
 
-/* links */
+
 a {
     color: #191265; /* dark blue */
     text-decoration: none;
@@ -65,36 +43,78 @@ a {
 
 a:hover {
     color: #387780; /* teal green */
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /*paragraphs */
 p {
     color: #191265; /* dark blue */
-    margin: 20px 0;
-    font-size: 1.2em;
+    margin: 30px 0;
+    font-size: 20px;
 }
-
-/* img 
-img {
-    max-width: 20%;
-    height: 20%;
-    margin: 20px 0;
-} */
 
 /* heading */
-h1, h2 {
+h1 {
     color: #191265; /* dark blue */
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*footer*/
+footer {
+    background-color: #ffffff; /* white */
+    color: #191265; /* dark blue */
+    padding: 10px;
+    text-align: center; 
+    margin-top: auto; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+footer nav a {
+    color: #191265;  /* dark blue */
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 15px;
+    padding:10px;
+    margin: 15px;
+}
+
+footer nav a:hover {
+    color: #387780; /* teal green */
+    text-decoration: none;
+    font-weight: bold;
+    border:1px solid #191265; /* dark blue */
+}
+
+/* header */
+header {
+    background-color: #E6D4e6;   /* pink */
+    color: #ffffff;  /* white */
+    padding: 20px;
+    text-align: center;
+    
 }
 
 
-/* footer */
-footer {
-    background-color: #ede9e2; /* beige */
-    color: #ffffff; /* white */
-    padding: 20px;
-    border-top: 2px solid #387780; /* teal green */
-    border-bottom: 2px solid #387780; /* teal green */
+header nav a {
+    color: #191265; /* dark blue */
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 15px;
+    padding:10px;
+    margin: 15px; 
+   
+}
+
+header nav a:hover {
+    color: #387780; /* teal green */
+    text-decoration: none;
+    font-weight: bold;
+    border:1px solid #191265; /* dark blue */
+    background-color: #ffffff; /* white */
 }
