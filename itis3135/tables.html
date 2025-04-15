@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Assignment - Whimsical Company - Diligent Narwhal Serums</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> <!--Accumulus-->
+    <style>
+    /* table styles */
+    table {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding:10px;
+    }
+    th {
+        background-color: #387780; 
+        color: white;
+    }
+
+    figcaption {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    table tr:nth-child(even) {
+    background-color: #edccf2;
+    color: black; }
+
+    table tr:nth-child(odd) {
+    background-color: #e0f8ff;
+    color: black; }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <!--Common Header Dynamically-->
+       <div data-include="components/header.html"></div>
+    </header>
+    <main> 
+        <h2>Tables Assignment</h2>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Marina Tusk - marina.tusk@gmail.com - 10 years</li>
+            <li>Arlo Carter - arlo.carter@gmail.com - 7 years</li>
+            <li>Lena Pierce - lena.pierce@gmail.com - 5 years</li>
+            <li>Hally Waters - hally.waters@gmail.com - 12 years</li>
+            <li>Cora Mist - cora.mist@gmail.com - 3 years</li>
+            <li>Harper Crest - harper.crest@gmail.com - 8 years</li>
+            <li>Lucas Harrow - lucas.harrow@gmail.com - 15 years</li>
+        </ol>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Marina Tusk</td>
+                <td>marina.tusk@gmail.com</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Arlo Carter</td>
+                <td>arlo.carter@gmail.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Lena Pierce</td>
+                <td>lena.pierce@gmail.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Hally Waters</td>
+                <td>hally.waters@gmail.com</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Cora Mist</td>
+                <td>cora.mist@gmail.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Harper Crest</td>
+                <td>harper.crest@gmail.com</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Lucas Harrow</td>
+                <td>lucas.harrow@gmail.com</td>
+                <td>15</td>
+            </tr>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+        <figcaption>Employee Information</figcaption>
+        <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td>CEO/Manager</td>
+                    <td>Marina Tusk</td>
+                    <td>marina.tusk@gmail.com</td>
+                    <td>10</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>Information Technology</td>
+                    <td>Arlo Carter</td>
+                    <td>arlo.carter@gmail.com</td>
+                    <td>7</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>Serum Maker</td>
+                    <td>Lena Pierce</td>
+                    <td>lena.pierce@gmail.com</td>
+                    <td>5</td>
+                    <td>$3,500</td>
+                </tr>
+                <tr>
+                    <td>Operations</td>
+                    <td>Hally Waters</td>
+                    <td>hally.waters@gmail.com</td>
+                    <td>12</td>
+                    <td>$4,500</td>
+                </tr>
+                <tr>
+                    <td>Marketing</td>
+                    <td>Cora Mist</td>
+                    <td>cora.mist@gmail.com</td>
+                    <td>3</td>
+                    <td>$2,500</td>
+                </tr>
+                <tr>
+                    <td>Sales</td>
+                    <td>Harper Crest</td>
+                    <td>harper.crest@gmail.com</td>
+                    <td>8</td>
+                    <td>$3,200</td>
+                </tr>
+                <tr>
+                    <td>Accounting</td>
+                    <td>Lucas Harrow</td>
+                    <td>lucas.harrow@gmail.com</td>
+                    <td>15</td>
+                    <td>$6,000</td>
+                </tr>
+            </table>
+        </figure>
+    </main> 
+    <footer> 
+         <!--Common Footer Dynamically-->
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLinclude.min.js"></script> <!--Script that allows Dynamically headers and footers-->
+</body>
+</html>
