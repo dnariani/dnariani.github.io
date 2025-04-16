@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Introduction Page Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/survey.js" defer></script> <!-- link to survey.js file -->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> <!--Accumulus-->
+    <style>
+    form {
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        border-radius:10px;
+        margin-bottom: 20px;
+    }
+
+    form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: #333;
+        text-align: center;
+    }
+
+    form input {
+        width: 100%;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    form textarea {
+        width: 100%;
+        padding:10px;
+        margin-bottom: 15px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-sizing: border-box;
+        resize: vertical;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    form button {
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: lightpink;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    </style>
+</head>
+<body>
+    <!-- has header, main, and footer, -->
+    <!-- has h1 w course, and name  -->
+    <header>
+        <!--Common Header Dynamically-->
+       <div data-include="components/header.html"></div>
+     <!-- has header, main, and footer, -->
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page</h3>
+        <form class="BYOform">
+            <!--Name-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" value="Disha Nariani" required><br><br>
+
+            <!--Mascot-->
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" placeholder="Your Mascot" value="Narwhal" required><br><br>
+
+            <!--Image-->
+            <label for="image">Image (PNG or JPG):</label>
+            <input type="file" id="image" name="image" accept=".png,.jpg" required><br><br>
+
+            <!--Image Caption-->
+            <label for="caption">Image Caption:</label>
+            <input type="text" id="caption" name="caption" placeholder="Image Caption" value="me" required><br><br>
+
+             <!--Personal-->
+            <label for="personal">Personal Background:</label>
+            <textarea id="personal" name="personal" placeholder="Your personal background" required>Personal Background</textarea><br><br>
+
+             <!--Professional-->
+            <label for="professional">Professional Background:</label>
+            <textarea id="professional" name="professional" placeholder="Your professional background"  required>Professional Background</textarea><br><br>
+
+             <!--Academic-->
+            <label for="academic">Academic Background:</label>
+            <textarea id="academic" name="academic" placeholder="Your academic background" required>Academic Background</textarea><br><br>
+
+             <!--WebDev-->
+            <label for="web-dev">Background in Web Development:</label>
+            <textarea id="web-dev" name="web-dev" placeholder="Your web dev experience" required>Web Development Background</textarea><br><br>
+
+            <!--Computer-->
+            <label for="primary-computer">Primary Computer Platform:</label>
+            <input type="text" id="primary-computer" name="primary-computer" placeholder="Windows, Mac, etc." required><br><br>
+
+            <!--Courses-->
+            <label>Courses Currently Taking:</label>
+            <div id="courses">
+                <button type="button" id="add-course">Add Course</button>
+            </div><br>
+
+            <!--Funny-->
+            <label for="funny">Funny Thing:</label>
+            <textarea id="funny" name="funny" placeholder="Something funny"></textarea><br><br>
+
+            <!--Anything-->
+            <label for="anything-else">Anything Else:</label>
+            <textarea id="anything-else" name="anything-else" placeholder="Anything else?"></textarea><br><br>
+
+            <!--Checkbox w text-->
+            <label>
+                <input type="checkbox" id="agree" name="agree" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+            </label><br><br>
+
+            <!--Submit-->
+            <input type="submit" value="Submit">
+
+            <!--Reset-->
+            <input type="reset" value="Reset">
+        </form>
+    </main> 
+    <footer> 
+         <!--Common Footer Dynamically-->
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLinclude.min.js"></script> <!--Script that allows Dynamically headers and footers-->
+</body>
+</html>
+ 
