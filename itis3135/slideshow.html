@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Disha G. Nariani - Diligent Narwhal - ITSC-3135 </title>
+<link rel="stylesheet" href="styles/default.css">
+<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> <!--Accumulus-->
+<style>
+body {
+    margin: 0;
+    color: black;
+  
+}
+.container img {
+  width: 500px; 
+  height: 500px;
+}
+.container {
+    position: relative; 
+    max-width: 600px; 
+    margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.mySlides {
+    display: none; 
+}
+
+.prev, .next {
+  width: auto;
+  position: absolute;
+  top: 85%; 
+  transform: translateY(-50%); 
+  font-size: 18px;
+  padding: 25px;
+
+  background-color: black;
+  color: white; 
+  
+}
+
+.prev {
+  left: 360px; 
+  
+}
+
+.next {
+  right: 360px;
+}
+
+.numbertext { 
+    color: black; 
+    font-size: 20px; 
+    padding: 20px; 
+    background-color: white; 
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  font-size: 20px; 
+}
+
+.row { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 10px; 
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px; 
+}
+
+.column img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.column img:hover {
+  opacity: 1; 
+}
+.demo {
+  opacity: 0.5; 
+}
+
+
+</style>
+</head>
+<body>
+    <!-- has header, main, and footer, -->
+    <!-- has h1 w course, and name  -->
+    <header>
+        <!--Common Header Dynamically-->
+       <div data-include="components/header.html"></div>
+     <!-- has header, main, and footer, -->
+    </header>
+    <main> 
+        <h2>Slideshow Gallery: Disha Nariani</h2>
+<div class="container">
+    <!--Diamond - D -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="images/diamond.png" style="width:100%" alt="Diamond - D">
+    </div>
+
+     <!--Ice Cream - I -->
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="images/icecream.png" style="width:100%" alt="Ice Cream - I">
+    </div>
+
+     <!--Snowflake - S -->
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="images/snowflake.png" style="width:100%" alt="Snowflake - S">
+    </div>
+
+    <!--HousePlant - H -->
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="images/houseplant.png" style="width:100%" alt="House Plant - H">
+    </div>
+
+    <!--Avocado Toast - A -->
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="images/avocadotoast.png" style="width:100%" alt="Avocado Toast - A">
+    </div>
+
+    <!-- Nail Polish - N -->
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="images/nailpolish.png" style="width:100%" alt="Nail Polish - N">
+    </div>
+
+    <!-- Apple - A -->
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="images/apple.png" style="width:100%" alt="Apple - A">
+    </div>
+
+    <!-- Raspberries- R -->
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="images/raspberries.png" style="width:100%" alt="Raspberries - R">
+    </div>
+
+    <!-- Ice Coffee- I -->
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="images/icedcoffee.png" style="width:100%" alt="Iced Coffee - I">
+    </div>
+
+    <!-- Airplane - A -->
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="images/airplane.png" style="width:100%" alt="Airplane - A">
+    </div>
+
+    <!-- Nightstand - N -->
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="images/nightstand.png" style="width:100%" alt="Nightstand - N">
+    </div>
+
+    <!-- Igloo - I -->
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="images/igloo.png" style="width:100%" alt="Igloo - I">
+    </div>
+</div>
+  
+    <!-- next and prev-->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+    
+    <!-- Thumbnail images -->
+    <div class="row">
+        <div class="column">
+            <img class="demo" src="images/diamond.png" style="width:100%" onclick="currentSlide(1)" alt="Diamond">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/icecream.png" style="width:100%" onclick="currentSlide(2)" alt="Ice Cream">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/snowflake.png" style="width:100%" onclick="currentSlide(3)" alt="Snowflake">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/houseplant.png" style="width:100%" onclick="currentSlide(4)" alt="House Plant">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/avocadotoast.png" style="width:100%" onclick="currentSlide(5)" alt="Avocado Toast">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/nailpolish.png" style="width:100%" onclick="currentSlide(6)" alt="Nail Polish">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/apple.png" style="width:100%" onclick="currentSlide(7)" alt="Apple">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/raspberries.png" style="width:100%" onclick="currentSlide(8)" alt="Raspberries">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/icedcoffee.png" style="width:100%" onclick="currentSlide(9)" alt="Iced Coffee">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/airplane.png" style="width:100%" onclick="currentSlide(10)" alt="Airplane">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/nightstand.png" style="width:100%" onclick="currentSlide(11)" alt="Nightstand">
+        </div>
+        <div class="column">
+            <img class="demo" src="images/igloo.png" style="width:100%" onclick="currentSlide(12)" alt="Igloo">
+        </div>
+    </div>
+        <h4>AI Prompts - By Mircosoft Co-Pilot</h4>
+        <ol>
+            <li>Diamond</li>
+            <li>Ice Cream</li>
+            <li>Snowflake</li>
+            <li>HousePlant</li>
+            <li>Avocado Toast</li>
+            <li>Nail Polish</li>
+            <li>Apple</li>
+            <li>Raspberries</li>
+            <li>Iced Coffee</li>
+            <li>Airplane</li>
+            <li>Nightstand</li>
+            <li>Igloo</li>
+        </ol>
+    </main> 
+
+    <script src="./scripts/slideshowscript.js"></script>
+    <footer> 
+         <!--Common Footer Dynamically-->
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLinclude.min.js"></script> <!--Script that allows Dynamically headers and footers-->
+</body>
+</html>
+ 
