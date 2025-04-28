@@ -8,25 +8,20 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> <!--Accumulus-->
 </head>
 <body>
-    <!-- has header, main, and footer, -->
-    <!-- has h1 w course, and name  -->
     <header>
         <!--Common Header Dynamically-->
        <div data-include="components/header.html"></div>
      <!-- has header, main, and footer, -->
     </header>
     <main> 
-        <div class="main">
-         <!-- main starts with h2 and has name of page -->
-        <h2> Home </h2>
-        <p>HELLO, THIS IS MY COURSE PAGE</p>
-        <a href = "../index.html"> Click this link for ITIS3135 Personal Homepage</a>
-        </div>
+        <h2> Interactive Drawing </h2>
     </main> <!-- added main to fix errors-->
     <footer> 
          <!--Common Footer Dynamically-->
         <div data-include="components/footer.html"></div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script> <!--Script that allows p5-->
+    <script src="scripts/sketch.js"></script>  <!--Script that allows p5-->
     <script src="scripts/HTMLinclude.min.js"></script> <!--Script that allows Dynamically headers and footers-->
 </body>
 </html>

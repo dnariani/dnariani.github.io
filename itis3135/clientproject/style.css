@@ -39,6 +39,27 @@ nav ul {
     margin-left: 100px;
 }
 
+.button {
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 35px;
+    padding: 30px;
+    background-color: #C5A880;
+    color: #222D52;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold; 
+    text-align: center; /* Centers the text */
+   
+  }
+  
+  .button:hover {
+    background-color: #222D52;
+    color:#FFFFFF;
+  }
+
 nav ul li {
     margin: 0px 0px 0px 40px; 
 }
@@ -123,15 +144,16 @@ figcaption {
     width: 600px; 
     height: 550px; 
     background: linear-gradient(150deg, #222D52, #C5A880); 
-    padding: 50px; 
+    padding: 50px;
     margin-top: 5%;
     margin-left: 20px;
     border-radius: 20px;
     text-align: center;
+    box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.leftbox h1.titleleft {
+.leftbox .titleleft {
     font-size: 30px; 
     color: #FFFFFF;
     margin-bottom: 15px;
@@ -139,14 +161,14 @@ figcaption {
     letter-spacing: 3px;
 }
 
-.leftbox p.description {
+.leftbox .description {
     font-size: 14px; 
     color: #FFFFFF; 
     font-style: italic;
     margin-bottom: 10px;
 }
 
-.leftbox p.motto {
+.leftbox .motto {
     font-size: 60px; 
     color: #FFFFFF; 
     line-height: 1;
@@ -204,7 +226,7 @@ p {
 }
 
 /* SERVICES */
-.main h1 {
+h1 {
     font-size: 40px;
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -239,7 +261,7 @@ p {
     color: #FFFFFF; 
 }
 
-.comments h1 {
+.commentsh1 {
     margin-top: 80px;
     font-size: 45px;
     color: #C5A880; 
@@ -267,13 +289,13 @@ p {
     overflow: hidden;
 }
 
-.testimonialsbox h2 {
+.testimonialsh2 {
     font-size: 30px;
     color: #C5A880; 
     margin-bottom: 15px;
 }
 
-.testimonialsbox p {
+.testimonialsp {
     font-size: 20px;
     color: #000000; 
     margin-bottom: 20px;
@@ -288,9 +310,10 @@ p {
     border-radius: 10px;
     width: 50%;
     margin:50px auto;
+    box-sizing: border-box;
 }
 
-.form-container h2 {
+.form-containerh2 {
     margin-bottom: 20px;
     color: #C5A880; 
 }
@@ -303,13 +326,13 @@ p {
     margin-bottom: 20px;
 }
 .formbox input, .formbox textarea, select {
-    
     border: 1px solid #C5A880; 
     border-radius: 5px;
     background-color: #000000; 
     color: #FFFFFF; 
     width: 100%;
     padding: 5px;
+    box-sizing: border-box;
 }
 
 .submit {
@@ -322,10 +345,10 @@ p {
     padding: 20px;
     background-color: #C5A880; 
     color: #000000;
+    box-sizing: border-box;
 }
 
 .submit:hover {
     background-color: #FFFFFF; 
     color: #000000; 
 }
-
